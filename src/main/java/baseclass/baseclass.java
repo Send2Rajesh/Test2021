@@ -9,7 +9,7 @@ public class baseclass {
 	
  public static WebDriver browerlaunch() {
 	// TODO Auto-generated method stub
-	 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Tester-001\\eclipse-workspace\\FB\\src\\test\\resource\\drivers\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resource\\drivers\\chromedriver.exe");
 		driver=new ChromeDriver();
 		return driver;
 }
